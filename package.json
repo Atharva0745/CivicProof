@@ -1,0 +1,22 @@
+{
+  "name": "civicproof",
+  "version": "1.0.0",
+  "description": "CivicProof - Verified Municipal Issue Resolution (Mumbai)",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "test": "npm --prefix server test",
+    "build:client": "npm --prefix client run build"
+  },
+  "keywords": [
+    "civicproof",
+    "mumbai",
+    "civic-tech",
+    "react",
+    "vite",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC"
+}

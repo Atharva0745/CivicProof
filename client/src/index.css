@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #F6F7F5;
+  --color-surface: #FFFFFF;
+  --color-ink: #17211F;
+  --color-muted: #68736F;
+  --color-line: #E1E6E2;
+  --color-primary: #176B5B;
+  --color-primary-hover: #115448;
+  --color-info: #245FC7;
+  --color-warning-bg: #FFF3D8;
+  --color-warning-ink: #805500;
+  --color-danger-bg: #FDE9E7;
+  --color-danger-ink: #A12D25;
+  --color-success-bg: #E2F4EA;
+  --color-success-ink: #176443;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --shadow-floating: 0 8px 24px rgba(23, 33, 31, 0.08);
+}
+
+/* Custom scrollbars and map styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F7F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D8D3;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A9B4AC;
+}
+
+/* Leaflet map custom pin styles */
+.custom-civic-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.22);
+  transition: transform 0.15s ease-out;
+}
+
+.custom-civic-pin:hover {
+  transform: scale(1.15);
+  z-index: 1000 !important;
+}
+
+.custom-civic-pin.selected {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 3px #176B5B, 0 6px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1001 !important;
+}
